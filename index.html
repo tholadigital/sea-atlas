@@ -6,11 +6,11 @@
 <html> <!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Bingo One page parallax responsive HTML Template ">
+  <meta name="description" content="Sea Atlas Data tools">
   
   <meta name="author" content="Themefisher.com">
 
-  <title>Rino Digital Agency</title>
+  <title>Sea Atlas.</title>
 
 <!-- Mobile Specific Meta
   ================================================== -->
@@ -33,8 +33,8 @@
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">  
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
 </head>
 
@@ -56,21 +56,14 @@
   <!--
   End Preloader
   ==================================== -->
-
-
-  
-
-<!--
-Fixed Navigation
-==================================== -->
-<header class="navigation fixed-top">
+<header style="background-color: #2a7ca4;" class="navigation fixed-top">
   <div class="container">
     <!-- main nav -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <!-- logo -->
       <a class="navbar-brand logo" href="index.html">
         <img class="logo-default" src="images/logo.png" alt="logo"/>
-        <img class="logo-white" src="images/logo-white.png" alt="logo"/>
+        <img style="height: 50px;" class="logo-white" src="images/logo-white.png" alt="logo"/>
       </a>
       <!-- /logo -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -81,7 +74,7 @@ Fixed Navigation
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav ml-auto text-center">
           <li class="nav-item ">
-            <a class="nav-link" href="contact.html">Contact</a>
+           <!-- <a class="nav-link" href="mailto:info@rino27.com">Contact</a>-->
           </li>
         </ul>
       </div>
@@ -89,153 +82,102 @@ Fixed Navigation
     <!-- /main nav -->
   </div>
 </header>
-<!--
-End Fixed Navigation
-==================================== -->
-
-
-	<div class="hero-slider">
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider-bg-1.jpg);">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Unleashing Digital <br>
-						Excellence</h1>
-					<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Is your company capable of securing its market share?
-					<br>
-					Great technological knowledge is necessary in today's economy;<br> let's cooperate to succeed. </p>
-					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="service.html">Request contact</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider-bg-2.jpg);">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Technology Research <br> and
-						Development</h1>
-					<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">Partner with experienced software pros 
-						<br>and get your digital goals met.</p>
-					<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8"  class="btn btn-main" href="service.html">Request Contact</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-<!--
-Start About Section
-==================================== -->
-<section class="service-2 section">
+<!-- -->
+<section style="background-color: #083648;" class="service-2 section">
   <div class="container">
     <div class="row">
 
-      <div class="col-12">
+      <div class="col-7">
         <!-- section title -->
-        <div class="title text-center">
-          <h2>What's currently on offer</h2>
-          <p>We work on a variety of intriguing projects with the goal of providing services that you won't find anywhere else.
-			Simple websites and extensive applications are also part of our portfolio.  </p>
-          <div class="border"></div>
+        <div  class="text-left">
+          <p id="infoText" style="color: white">Use the map below to locate the beach where you'd like to place the SharkSafeBarrier </p>
         </div>
         <!-- /section title -->
       </div>
 
-      <div class="col-md-4 text-center">
-        <img src="images/about/member.jpg" class="inline-block" alt="">
-      </div>
+      
+     
       <div class="col-md-8">
-        <div class="row text-center">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <i><iconify-icon style="font-size: 39px;position: relative;top: 7px;" icon="fluent-mdl2:website"></iconify-icon></i>
-              <h4>Web Development</h4>
-              <p>Trusting a company that has a strong web presence is quicker.
-				We offer innovative, enticing websites for your brand that are easy to use and greatly increase traffic.  </p>
-            </div>
+        <div class="row">
+          <div class="col-md-10">
+
+             <div id="map" style="height: 400px"></div>
+
+<!--
+        <iframe
+            width="600"
+            height="450"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAAhS_gF5O_0hj8x1PPOQEMwixqv4maF4s&q=Platternburg+bay">
+          </iframe>-->
           </div><!-- END COL -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <i ><iconify-icon style="font-size: 35px;position: relative;top: 7px;" icon="eos-icons:blockchain"></iconify-icon></i>
-              <h4>Web3</h4>
-              <p>A new generation of the Internet is expected to emerge with the advancement of web technologies. centered on concepts for a decentralized, peer-to-peer internet and technology like public blockchains.</p>
-            </div>
-          </div><!-- END COL -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <i ><iconify-icon icon="mdi:robot"></iconify-icon></i>
-              <h4>Drones & Robotics</h4>
-              <p>Power, motors, and parts are necessary for the next logical field of radical developments.
-				A Raspberry Pi single-board computer or an Arduino microcontroller board could be used to begin developing a basic robot. </p>
-            </div>
-          </div><!-- END COL -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <i><iconify-icon style="font-size: 35px;position: relative;top: 7px;"  icon="iconoir:vr-symbol"></iconify-icon></i>
-              <h4>Mixed Reality</h4>
-              <p>You want it but can't afford it.
-				the combination of real-world and 3D imagery made possible by contemporary image-processing technologies.</p>
-            </div>
-          </div><!-- END COL -->
+          <div class="col-md-10 text-right">
+            <br>
+             <button onclick="changeInfoText()" type="button" class="btn btn-info btn-lg" style="color: black;">Next</button>
+          </div>
+
         </div>
       </div>
     </div> <!-- End row -->
   </div> <!-- End container -->
 </section> <!-- End section -->
 
+  
+<footer id="footer" class="bg-one" style="background-color: #083648;">
+ 
+    <img src="images/footer.png" style="width: 100%">
 
-<footer id="footer" class="bg-one">
-  <div class="top-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>about</h3>
-          <p>Utilizing cutting-edge technology, we strive to increase our effectiveness and client satisfaction. </p>
-        </div>
-        <!-- End of .col-sm-3 -->
+</footer>
 
-        <div class="col-sm-3 col-md-3 col-lg-3">
-          <ul>
-            <li><h3>Connect with us</h3></li>
-            <li><a href="https://www.linkedin.com/company/rino-digital/?">Linkedin</a></li>
-            <li><a href="https://www.linkedin.com/company/rino-digital/?">Leave a message</a></li>
-          </ul>
-        </div>
-        <!-- End of .col-sm-3 -->
+<div class="modal fade right" id="exampleModal" tabindex="-1" role="dialog">
 
+<div class="container">
+   
+
+  <div class="row">
+    <div class="col">
+    </div>
+
+    <div class="col">
+      <br>
+      <br>
+      <br>
+        <div  class="modal-dialog" role="document">
+          <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="modalTl" class="modal-title">Modal title</h5>
+        <button type="button" onclick="unzoomMap()" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-    </div> <!-- end container -->
+      <div id="modalBd" class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="unzoomMap()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
-  <div class="footer-bottom">
-    <h5>Copyright 2022. All rights reserved.</h5>
-    <h6>Design and Developed by <a href="#">RINO DIGITAL</a></h6>
+    </div>
   </div>
-</footer> <!-- end footer -->
+</div>
 
 
-    <!-- end Footer Area
-    ========================================== -->
-    
 
-    
+</div>
+
+  
     <!-- 
     Essential Scripts
     =====================================-->
     <!-- Main jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-    <script  src="plugins/google-map/gmap.js"></script>
 
-    <!-- Form Validation -->
-    <script src="plugins/form-validation/jquery.form.js"></script> 
-    <script src="plugins/form-validation/jquery.validate.min.js"></script>
-    
-    <!-- Bootstrap4 -->
+   <!-- Bootstrap4 -->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- Parallax -->
     <script src="plugins/parallax/jquery.parallax-1.1.3.js"></script>
@@ -251,17 +193,85 @@ Start About Section
     <!-- Custom js -->
     <script src="js/script.js"></script>
 
-    
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BL4H9RDS54"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+      <script type="text/javascript">
+        function unzoomMap(){
+            map.setZoom(10);
+        }
+   // Initialize and add the map
+   var map ;
+        function initMap() {
+          console.log("initMap hello")
+          // The location of Uluru
+          const uluru = { lat: -34.0575, lng: 23.3645 };
+          // The map, centered at Uluru
+           map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: uluru,
+          });
+      
 
-	  gtag('config', 'G-BL4H9RDS54');
-	</script>
 
+        }
+
+      function markerPopup(posit){
+        console.log("markerPopup", posit)
+        $('#exampleModal').modal('show');
+        modalTl.innerText = `${posit.lat()} , ${posit.lng()}`
+        var m1=`${(Math.random()*8)}`.slice(0,3)
+        var m2 = `${(Math.random()*6)}`.slice(0,3)
+        modalBd.innerHTML = `<h2>depth</h2><h>${m1}m</h><h2>Mid-tide</h2><h>${m2}m</h>`
+      }
+      var locations = [];
+        function placeMarker(location) {
+          console.log(location.lng())
+          locations.push({lat:location.lat(),lng:location.lng()})
+            var marker = new google.maps.Marker({
+                position: location, 
+                map: map
+            });
+
+              marker.addListener("click", () => {
+                map.setZoom(12);
+                map.setCenter(marker.getPosition());
+                markerPopup(marker.getPosition())
+              });
+        }
+
+        var currentStep = ""
+
+          function changeInfoText(){
+            if(currentStep=="dropPins"){
+                const flightPath = new google.maps.Polyline({
+                  path: locations,
+                  geodesic: true,
+                  strokeColor: "#FF0000",
+                  strokeOpacity: 1.0,
+                  strokeWeight: 2,
+                });
+                flightPath.setMap(map);
+                infoText.innerText = "select a pin to find out the depth and mid tide values at those coordinates"
+            }
+
+            else{
+
+              currentStep="dropPins"
+            //  console.log(currentStep)
+              infoText.innerText = "Drop pins along the beach where the safe barrier may be placed. You can drop between 2-6 pins. Then, the map will generate a line between your chosen points."
+
+                google.maps.event.addListener(map, 'click', function(event) {
+                   placeMarker(event.latLng);
+                });
+                
+            }
+            
+            }
+
+        window.initMap = initMap;
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAhS_gF5O_0hj8x1PPOQEMwixqv4maF4s&callback=initMap&v=weekly"
+      defer
+    ></script>
 
   </body>
   </html>
